@@ -13,7 +13,7 @@ app.config['SECRET_KEY'] = 'secretkey'
 
 base_path = Path(__file__).parent
 
-app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///' + str((base_path / "./todo.db").resolve())
+app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///' + str((base_path / "./todo.db").resolve()) #'mysql://root:root@db/todo'
 
 db = SQLAlchemy(app)
 
